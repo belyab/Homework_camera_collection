@@ -5,3 +5,7 @@
 В карточке содержится изображение, дата добавления и геопозиция
 
 Ссылка на то как должно выглядить https://www.figma.com/file/Z3bVVk9BI3CPk3HKE2CxT7/Untitled?node-id=0%3A1
+
+
+https://user-images.githubusercontent.com/72295958/168476166-5360027f-5198-45bc-8155-55267945a09c.mp4
+
