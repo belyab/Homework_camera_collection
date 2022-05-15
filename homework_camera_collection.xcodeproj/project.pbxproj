@@ -13,6 +13,11 @@
 		4DBBB26F281C3F96006B8236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBBB26D281C3F96006B8236 /* Main.storyboard */; };
 		4DBBB271281C3F99006B8236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DBBB270281C3F99006B8236 /* Assets.xcassets */; };
 		4DBBB274281C3F99006B8236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DBBB272281C3F99006B8236 /* LaunchScreen.storyboard */; };
+		D67A17982831087A00D0CA4A /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A17972831087A00D0CA4A /* CustomAnnotation.swift */; };
+		D67A179A2831089200D0CA4A /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A17992831089200D0CA4A /* CustomAnnotationView.swift */; };
+		D67A17A12831156200D0CA4A /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A17A02831156200D0CA4A /* PhotoCollectionViewCell.swift */; };
+		D67A17A3283116B600D0CA4A /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A17A2283116B600D0CA4A /* PhotoCell.swift */; };
+		D67A17A52831183500D0CA4A /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A17A42831183500D0CA4A /* CustomLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		4DBBB270281C3F99006B8236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DBBB273281C3F99006B8236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DBBB275281C3F99006B8236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67A17972831087A00D0CA4A /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		D67A17992831089200D0CA4A /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		D67A17A02831156200D0CA4A /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D67A17A2283116B600D0CA4A /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		D67A17A42831183500D0CA4A /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		4DBBB266281C3F96006B8236 /* homework_camera_collection */ = {
 			isa = PBXGroup;
 			children = (
+				D67A179F2831153B00D0CA4A /* CollectionView */,
+				D67A179E2831152900D0CA4A /* MapView */,
 				4DBBB267281C3F96006B8236 /* AppDelegate.swift */,
 				4DBBB269281C3F96006B8236 /* SceneDelegate.swift */,
-				4DBBB26B281C3F96006B8236 /* ViewController.swift */,
 				4DBBB26D281C3F96006B8236 /* Main.storyboard */,
 				4DBBB270281C3F99006B8236 /* Assets.xcassets */,
 				4DBBB272281C3F99006B8236 /* LaunchScreen.storyboard */,
 				4DBBB275281C3F99006B8236 /* Info.plist */,
 			);
 			path = homework_camera_collection;
+			sourceTree = "<group>";
+		};
+		D67A179B28310AD900D0CA4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D67A17972831087A00D0CA4A /* CustomAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D67A179C28310ADF00D0CA4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D67A17992831089200D0CA4A /* CustomAnnotationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D67A179D28310AE300D0CA4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4DBBB26B281C3F96006B8236 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D67A179E2831152900D0CA4A /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				D67A179D28310AE300D0CA4A /* Controller */,
+				D67A179C28310ADF00D0CA4A /* View */,
+				D67A179B28310AD900D0CA4A /* Model */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		D67A179F2831153B00D0CA4A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D67A17A02831156200D0CA4A /* PhotoCollectionViewCell.swift */,
+				D67A17A2283116B600D0CA4A /* PhotoCell.swift */,
+				D67A17A42831183500D0CA4A /* CustomLayout.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67A17A3283116B600D0CA4A /* PhotoCell.swift in Sources */,
 				4DBBB26C281C3F96006B8236 /* ViewController.swift in Sources */,
+				D67A179A2831089200D0CA4A /* CustomAnnotationView.swift in Sources */,
 				4DBBB268281C3F96006B8236 /* AppDelegate.swift in Sources */,
 				4DBBB26A281C3F96006B8236 /* SceneDelegate.swift in Sources */,
+				D67A17982831087A00D0CA4A /* CustomAnnotation.swift in Sources */,
+				D67A17A52831183500D0CA4A /* CustomLayout.swift in Sources */,
+				D67A17A12831156200D0CA4A /* PhotoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +349,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 939KD425D9;
+				DEVELOPMENT_TEAM = 62YX3Q29ZD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = homework_camera_collection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -317,7 +377,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 939KD425D9;
+				DEVELOPMENT_TEAM = 62YX3Q29ZD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = homework_camera_collection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
